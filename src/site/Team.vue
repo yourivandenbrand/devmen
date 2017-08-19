@@ -101,8 +101,8 @@ export default{
 					picture: picYouri,
 					skills:{
 						"HTML & CSS": 100,
-						"JAVASCRIPT": 100,
-						"GSAP": 90,
+						"JAVASCRIPT": 90,
+						"GSAP": 100,
 						"NODEJS": 80,
 						"VUE 2": 70
 					}						

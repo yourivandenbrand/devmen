@@ -12,16 +12,12 @@
 import Hero from "./site/Hero.vue"
 import Join from "./site/Join.vue"
 import Team from "./site/Team.vue"
+import Clients from "./site/Clients.vue"
 
 export default {
   name: 'app',
-  data () {
-    return {
-      
-    }
-  },
   components:{
-    Hero, Join, Team
+    Hero, Join, Team, Clients
   }
 }
 </script>
