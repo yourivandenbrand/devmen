@@ -3,8 +3,8 @@
     <hero></hero>
     <join></join>
     <team></team>
-<!--     <clients></clients>
-    <footer></footer> -->
+    <clients></clients>
+    <!-- <footer></footer> -->
   </div>
 </template>
 
@@ -35,5 +35,16 @@ export default {
 .theme-yellow{
   background-color:#fbe108;
   color:#000;
+}
+
+.theme-grey{
+  background-color: #efefef;
+  color: #000;
+}
+
+.content{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    text-align: left;
 }
 </style>

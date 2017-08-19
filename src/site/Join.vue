@@ -14,12 +14,7 @@
 	</div>
 </template>
 
-<style>
-	.content{
-	    padding-top: 3em;
-    	padding-bottom: 3em;
-    	text-align: left;
-	}
+<style>	
 	.btn-third{
 		background-color: #000;
 	    border-radius: 0;
