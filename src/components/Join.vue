@@ -19,6 +19,8 @@
 		background-color: #000;
 	    border-radius: 0;
 	    border-color: #000;
-	    color: #fff;
+	}
+	.btn-third a{
+	    color: #fff !important;
 	}
 </style>

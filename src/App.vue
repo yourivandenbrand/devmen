@@ -1,23 +1,24 @@
 <template>
-  <div id="app" class="container-fluid">
+  <div id="app">
     <hero></hero>
     <join></join>
     <team></team>
     <clients></clients>
-    <!-- <footer></footer> -->
+    <foot></foot>
   </div>
 </template>
 
 <script>
-import Hero from "./site/Hero.vue"
-import Join from "./site/Join.vue"
-import Team from "./site/Team.vue"
-import Clients from "./site/Clients.vue"
+import Hero from "./components/Hero.vue"
+import Join from "./components/Join.vue"
+import Team from "./components/Team.vue"
+import Clients from "./components/Clients.vue"
+import Foot from "./components/Foot.vue"
 
 export default {
   name: 'app',
   components:{
-    Hero, Join, Team, Clients
+    Hero, Join, Team, Clients, Foot
   }
 }
 </script>
@@ -38,9 +39,28 @@ export default {
   color: #000;
 }
 
+.theme-black{
+  background-color: #000;
+  color: #fff;
+}
+
 .content{
     padding-top: 3em;
     padding-bottom: 3em;
     text-align: left;
+}
+
+a,
+a:link,
+a:active {
+  color: #fff;
+}
+
+a:visited{
+  color:inherit;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 </style>

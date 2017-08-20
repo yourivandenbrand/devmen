@@ -1,7 +1,8 @@
 <template>
-	<div class="row">
+	<div class="row clients">
 		<div class="content container text-center">
-			<h2>_ourClients</h2>			
+			<h2>_ourClients</h2>
+					
 			<p>We are proud to work with top clients.</p>
 			<p>Check out a few of our clients</p>	
 
