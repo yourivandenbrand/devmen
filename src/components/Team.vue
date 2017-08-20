@@ -1,5 +1,5 @@
 <template>
-	<div class="row intro theme-grey">
+	<div class="intro theme-grey container-fluid">
 		<div class="content col-sm-12">
 			<div class="row justify-center">
 				<div v-for="member in team" class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
