@@ -19,7 +19,7 @@
 						<li class="link" @click="showJordiPhone = true" v-if="!showJordiPhone">Click to see the phone number</li>
 						<a class="link" v-else href="tel:+31628620688">+31628620688</a>
 						<li class="link" @click="showJordiMail = true" v-if="!showJordiMail">Click to show email</li>
-						<a class="link" href="mailto:jordi@devmen.nl">jordi@devmen.nl</a>
+						<a class="link" v-else href="mailto:jordi@devmen.nl">jordi@devmen.nl</a>
 						<li class="link"><a class="link" href="https://www.linkedin.com/in/jordiverzijden/" target="_blank">visit linkedin</a></li>
 					</ul>
 				</div>
