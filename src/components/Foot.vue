@@ -6,17 +6,21 @@
 					<img src="../assets/footer-logo.png" alt="Devmen">
 				</div>
 				<div class="col-sm-12 col-md-8 text-center links">
-					<span class="link" :href="phone" @click="phone = '0850021011'">{{ phone }}</span>
+					<span class="link" v-if="!showPhone" @click="showPhone = true">Click to see the phone number</span>
+					<a class="link" v-else href="tel:0850021011">0850021011</a>
 					<span> | </span>
-					<span class="link" :href="mail" @click="mail = 'info@devmen.nl'">{{mail}}</span>
+					<span class="link" v-if="!showMail" @click="showMail = true">Click to show email</span>
+					<a class="link" v-else href="mailto:info@devmen.nl">info@devmen.nl</a>
 					<span> | Curieweg 4C | Alphen aan den Rijn</span>
 				</div>
 				<div class="col-sm-12 col-md-3 text-center text-md-right contact">
 					<h6>In a hurry? Call Jordi</h6>
 					<ul class="list-inline">
-						<li class="link" :href="jordiPhone" @click="jordiPhone = '+31628620688'">{{jordiPhone}}</li>
-						<li class="link" :href="jordiMail" @click="jordiMail = 'jordi@devmen.nl'">{{jordiMail}}</li>
-						<li class="link"><a href="https://www.linkedin.com/in/jordiverzijden/">visit linkedin</a></li>
+						<li class="link" @click="showJordiPhone = true" v-if="!showJordiPhone">Click to see the phone number</li>
+						<a class="link" v-else href="tel:+31628620688">+31628620688</a>
+						<li class="link" @click="showJordiMail = true" v-if="!showJordiMail">Click to show email</li>
+						<a class="link" href="mailto:jordi@devmen.nl">jordi@devmen.nl</a>
+						<li class="link"><a class="link" href="https://www.linkedin.com/in/jordiverzijden/" target="_blank">visit linkedin</a></li>
 					</ul>
 				</div>
 			</div>
@@ -25,19 +29,25 @@
 </template>
 
 <script>
+
+// Todo: Create function to switch active state of links.
 export default{
 	data(){
 		return{
-			phone: "Click to see the phone number",
-			mail: "Click to show email",
-			jordiPhone: "Click to see the phone number",
-			jordiMail: "Click to show email"
+			showPhone: false,
+			showMail: false,
+			showJordiPhone: false,
+			showJordiMail: false
 		}
 	}
 }
 </script>
 
 <style>
+a.link{
+	color: #fbe108;
+	cursor:pointer;
+}
 .link{
 	color: #fbe108;
 	cursor:pointer;
